@@ -9,6 +9,17 @@ echo "Instalando Plank (dock estilo Mac)..."
 sudo apt install plank -y
 
 echo "Instalando Ulauncher (launcher estilo Spotlight)..."
+
+# Instalar dependências
+sudo apt install wget software-properties-common -y
+
+# Adicionar repositório do Ulauncher
+sudo add-apt-repository ppa:agornostal/ulauncher -y
+
+# Atualizar a lista de pacotes
+sudo apt update
+
+# Instalar Ulauncher
 sudo apt install ulauncher -y
 
 echo "Instalando Nemo (navegador de arquivos)..."
